@@ -30,5 +30,41 @@
             </td>
 
         </tr>
+
+        <tr>
+            <div ng-repeat="itrTask in tasks">
+                <td>
+                    {{itrTask.desc}}
+                </td>
+                <td>
+                    {{itrTask.dueDate}}
+                </td>
+                <td>
+                    {{itrTask.status}}
+                </td>
+                <td>
+                    {{itrTask.priority}}
+                </td>
+                <td>
+                    {{itrTask.user}}
+                </td>
+                <td>
+                    <div>
+                        <button  ng-click="editTask()">Edit Task</button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button  ng-click="deleteTask()">Delete Task</button>
+                    </div>
+                </td>
+            </div>
+        </tr>
+        <tr>
+            <div>
+                <button  ng-click="addTask()">Add Task</button>
+            </div>
+        </tr>
+
     </table>
 </div>
